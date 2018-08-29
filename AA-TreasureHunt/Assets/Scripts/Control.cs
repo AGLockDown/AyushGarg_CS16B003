@@ -44,12 +44,6 @@ public class Control : MonoBehaviour {
         t3.gameObject.SetActive(false);
     }
 
-    // Update is called once per frame
-    private void Update()
-    {
-        transform.Translate(Input.acceleration.x, 0, -Input.acceleration.z);
-    }
-
     void FixedUpdate () {
         float moveh = Input.GetAxis("Horizontal");
         float movev = Input.GetAxis("Vertical");
